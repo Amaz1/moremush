@@ -282,8 +282,8 @@ function moremush:register_mushroom(name, def)
 	minetest.register_abm({
 		nodenames = {"group:mush"},
 		neighbors = {"default:tree", "default:mossycobble"},
-		interval = 1,
-		chance = 1,
+		interval = 90,
+		chance = 2,
 		action = function(pos, node)
 			local n = minetest.get_node({x = pos.x, y = pos.y-1, z = pos.z})
 			if n.name == "default:tree" or n.name == "default:mossycobble" then
