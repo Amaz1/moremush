@@ -1,3 +1,4 @@
 farming
 flowers
 default
+dye

@@ -6,6 +6,13 @@
 --Simple API
 dofile(minetest.get_modpath("moremush").."/api.lua")
 
+minetest.register_craft({
+	output = 'moremush:mushroom_brown_spores',
+	recipe = {
+		{'flowers:mushroom_brown'},
+	}
+})
+
 moremush:register_mushroom("mushroom_red", {
 	mainname = ":flowers:mushroom_red",
 	maindname = "flowers:mushroom_red",
@@ -16,6 +23,7 @@ moremush:register_mushroom("mushroom_red", {
 	image_2 = "moremush_red_2",
 	image_3 = "moremush_red_3",
 	hp = -5,
+	dye = "red",
 })
 
 moremush:register_mushroom("mushroom_brown", {
@@ -28,6 +36,7 @@ moremush:register_mushroom("mushroom_brown", {
 	image_2 = "moremush_brown_2",
 	image_3 = "moremush_brown_3",
 	hp = 1,
+	dye = "brown",
 })
 
 moremush:register_mushroom("mushroom_green", {
@@ -44,7 +53,8 @@ moremush:register_mushroom("mushroom_green", {
 	light_0 = 1,
 	light_1 = 2,
 	light_2 = 3,
-	light_3 = 4
+	light_3 = 4,
+	dye = "green",
 })
 
 moremush:register_mushroom("mushroom_blue", {
@@ -61,7 +71,8 @@ moremush:register_mushroom("mushroom_blue", {
 	light_0 = 1,
 	light_1 = 2,
 	light_2 = 3,
-	light_3 = 4
+	light_3 = 4,
+	dye = "blue",
 })
 
 moremush:register_mushroom("mushroom_boom", {
@@ -78,6 +89,7 @@ moremush:register_mushroom("mushroom_boom", {
 	light_0 = 1,
 	light_1 = 2,
 	light_2 = 4,
-	light_3 = 6
+	light_3 = 6,
+	dye = "orange",
 })
 

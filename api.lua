@@ -279,6 +279,14 @@ function moremush:register_mushroom(name, def)
 		}
 	})
 	
+	minetest.register_craft({
+		output = 'moremush:'..name..'_spores',
+		recipe = {
+			{'moremush:mushroom_brown_spores'},
+			{'dye:'..def.dye..''},
+		}
+	})
+	
 	minetest.register_abm({
 		nodenames = {"group:mush"},
 		neighbors = {"default:tree", "default:mossycobble"},
