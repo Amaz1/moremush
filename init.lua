@@ -1,5 +1,7 @@
--- moremush 1.0
-minetest.register_alias("flowers:mushroom_red", "moremush:mushroom_red")
+-- moremush 1.0 by fishyWET
+-- license of code: WTFPL
+-- license of media: original mushroom texture made by Gambit, licensed WTFPL
+-- mushroom textures are modifications of Gambit's version and stay licensed WTFPL
 
 --Simple API
 dofile(minetest.get_modpath("moremush").."/api.lua")
